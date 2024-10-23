@@ -1,0 +1,133 @@
+@font-face {
+    font-family: 'SF Pro';
+    src: url('./fonts/SF-Pro.ttf') format('truetype');
+}
+
+body {
+    font-family: 'SF Pro', Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+}
+
+.container:hover {
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.8em;
+    color: #007acc;
+}
+
+h2 {
+    border-bottom: 2px solid #007acc;
+    padding-bottom: 5px;
+    margin-top: 20px;
+    color: #007acc;
+}
+
+.profile p, .experience p, .education p, .skills p {
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+.job, .project, .school {
+    margin-bottom: 20px;
+}
+
+.project h3 a {
+    color: #007acc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.project h3 a:hover {
+    color: #005f8d;
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: #666;
+}
+
+a {
+    color: #007acc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.project {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    padding: 6px;
+    border-radius: 5px;
+}
+
+.project:hover {
+    background-color: #e6f2ff;
+    transform: scale(1.02);
+}
+
+h3, h2 {
+    transition: color 0.3s ease;
+}
+
+h3:hover, h2:hover {
+    color: #005f8d;
+}
+
+#back-to-top {
+    font-family: 'SF Pro', Arial, sans-serif;
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #007acc;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#back-to-top:hover {
+    background-color: #005f8d;
+}
