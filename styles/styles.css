@@ -1,7 +1,4 @@
-@font-face {
-    font-family: 'SF Pro';
-    src: url('./fonts/SF-Pro.ttf') format('truetype');
-}
+@import url('https://aaronmansfield5.github.io/fonts/theme.css');
 
 body {
     font-family: 'SF Pro', Arial, sans-serif;
